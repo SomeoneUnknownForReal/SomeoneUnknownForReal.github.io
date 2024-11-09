@@ -26,7 +26,7 @@ header{
 
 .logo{
   cursor: pointer;
-  transition: all 1s ease-out 0s;
+  transition: all .5s ease-out 0s;
 }
 
 .logo:hover{
@@ -35,13 +35,13 @@ header{
 
 .nav_links{
   list-style: none;
-  transition: all 1s ease-out 0s;
+  transition: all .5s ease-out 0s;
 }
 
 .nav_links li{
   display: inline-block;
   padding: 0px 20px;
-  transition: all 1s ease-out 0s;
+  transition: all .5s ease-out 0s;
 }
 
 .nav_links li a:hover{
@@ -68,7 +68,7 @@ button:hover{
   padding: 20px 0;
   background: linear-gradient(120deg, #111, #122, #123);
   border-radius: 1rem;
-  transition: all 1s ease-out 0s;
+  transition: all .5s ease-out 0s;
 }
 
 .articlea p{
@@ -79,7 +79,7 @@ button:hover{
   background-image: radial-gradient(#0b9b2fc1, #3c8f50c1, #86b892c1);
   background-clip: text;
   color: transparent;
-  transition: all 1s ease-out 0s;
+  transition: all .5s ease-out 0s;
 }
 
 .articlea p span:hover{
@@ -92,4 +92,50 @@ button:hover{
 
 hr{
   color: white;
+}
+
+dialog{
+  border: none;
+  border-radius: 25px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 150px;
+  background: linear-gradient(120deg, #111111, rgb(17, 34, 21), rgb(17, 51, 20));
+  transition: all .5s ease-out 0s;
+}
+
+dialog::backdrop{
+  background-color: rgba(0, 50, 0, 0.5);
+}
+
+dialog h2{
+  position: absolute;
+  top: 5%;
+  left: 32%;
+  color: white;
+}
+
+.socials-container{
+  display: flex;
+  gap: 20px;
+  position: absolute;
+  top: 30%;
+  left: 19%;
+}
+
+.socials-container a{
+  padding: 1em;
+  height: 48px;
+  width: 48px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+}
+
+.socials-container a svg{
+  fill: white;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
 }
