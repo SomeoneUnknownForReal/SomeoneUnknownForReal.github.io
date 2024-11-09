@@ -76,7 +76,9 @@ button:hover{
 }
 
 .articlea p span{
-  color: #0b9b2fc1;
+  background-image: radial-gradient(#0b9b2fc1, #3c8f50c1, #86b892c1);
+  background-clip: text;
+  color: transparent;
   transition: all 1s ease-out 0s;
 }
 
