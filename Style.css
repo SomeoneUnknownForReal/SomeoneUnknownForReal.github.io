@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+  background: linear-gradient(#112, #111);
+  font-family: 'Montserrat', sans-serif, Arial;
+  font-weight: 600;
+  color: #edf0f1;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+li, a, button{
+  font-size: 16px;
+  text-decoration: none;
+  color: #edf0f1;
+}
+
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px 10%;
+}
+
+.logo{
+  cursor: pointer;
+  transition: all 1s ease-out 0s;
+}
+
+.logo:hover{
+  font-size: 17px;
+}
+
+.nav_links{
+  list-style: none;
+  transition: all 1s ease-out 0s;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 20px;
+  transition: all 1s ease-out 0s;
+}
+
+.nav_links li a:hover{
+  color: #999;
+  font-size: 17px;
+}
+
+button{
+  padding: 9px 25px;
+  background-color: #00FF00;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  transition: all 1s ease-out 0s;
+}
+
+button:hover{
+  background-color: #00e000;
+  padding: 10px 26px;
+}
+
+.articlea{
+  justify-content: center;
+  padding: 20px 0;
+  background: linear-gradient(120deg, #111, #122, #123);
+  border-radius: 1rem;
+  transition: all 1s ease-out 0s;
+}
+
+.articlea p{
+  margin-inline: 50px;
+}
+
+.articlea p span{
+  color: #0b9b2fc1;
+  transition: all 1s ease-out 0s;
+}
+
+.articlea p span:hover{
+  color: #0ebd3a;
+}
+
+.selected{
+  font-weight: bolder;
+}
+
+hr{
+  color: white;
+}
