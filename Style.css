@@ -44,9 +44,20 @@ header{
   transition: all .5s ease-out 0s;
 }
 
+.nav_links li a{
+  transition: color .5s ease-in-out 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .nav_links li a:hover{
   color: #999;
   font-size: 17px;
+}
+
+.nav_links li a svg{
+  fill: white;
 }
 
 button{
@@ -55,12 +66,19 @@ button{
   border: none;
   border-radius: 5rem;
   cursor: pointer;
-  transition: all 1s ease-out 0s;
+  transition: all .5s ease-out 0s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 button:hover{
   background-color: #00e000;
   padding: 10px 26px;
+}
+
+button svg{
+  fill: white;
 }
 
 .articlea{
@@ -71,19 +89,29 @@ button:hover{
   transition: all .5s ease-out 0s;
 }
 
-.articlea p{
+.articlea a{
   margin-inline: 50px;
 }
 
-.articlea p span{
+.articlea p{
+  margin-inline: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.articlea span{
   background-image: radial-gradient(#0b9b2fc1, #3c8f50c1, #86b892c1);
   background-clip: text;
   color: transparent;
   transition: all .5s ease-out 0s;
 }
 
-.articlea p span:hover{
+.articlea span:hover{
   color: #0ebd3a;
+}
+
+.articlea p svg{
+  fill: white;
 }
 
 .selected{
@@ -138,4 +166,8 @@ dialog h2{
   height: 24px;
   justify-content: center;
   align-items: center;
+}
+
+.mediumimg{
+  height: 300px;
 }
