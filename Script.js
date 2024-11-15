@@ -51,9 +51,9 @@ function prevSlide(){
 function nextSlide(){
   slideIdx++;
   if(slideIdx == 3){
-    slideDisplay.textContent = "1/" + slides.length;
+    slideDisplay.textContent = "1/" + slides.length + " | Use Left and Right arrow on your keyboard or just click the buttons";
   }else{
-    slideDisplay.textContent = (slideIdx+1).toString() + "/" + slides.length;
+    slideDisplay.textContent = (slideIdx+1).toString() + "/" + slides.length + " | Use Left and Right arrow on your keyboard or just click the buttons";
   }
   showSlide(slideIdx);
 }
