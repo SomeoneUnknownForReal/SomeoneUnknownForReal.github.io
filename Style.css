@@ -172,11 +172,21 @@ dialog h2{
   height: 300px;
 }
 
+.slidercontainer{
+  justify-content: center;
+  padding: 10px 0;
+  background: linear-gradient(120deg, #111, #122, #123);
+  border-radius: 1rem;
+  transition: all .5s ease-out 0s;
+}
+
 .slider{
   position: relative;
-  width: 100%;
+  max-width: 99%;
+  width: 95vh;
   margin: auto;
   overflow: hidden;
+  border-radius: 1rem;
 }
 
 .slider img{
