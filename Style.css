@@ -171,3 +171,58 @@ dialog h2{
 .mediumimg{
   height: 300px;
 }
+
+.slider{
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider img{
+  max-width: 100%;
+  height: 500px;
+  display: none;
+}
+
+img.displaySlide{
+  display: block;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slider button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 200ms ease 0s;
+}
+
+.slider button:hover{
+  padding: 25px 15px;
+}
+
+.slider span{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 9px 25px;
+  border-radius: 2rem;
+  left: 10px;
+  bottom: 10px;
+  transition: all 0.5s ease 0s;
+}
+
+.prevs{
+  left: 0;
+}
+
+.nexts{
+  right: 0;
+}
+
+@keyframes fade{
+  from {opacity: .5}
+  to {opacity: 1}
+}
