@@ -24,6 +24,10 @@ header{
   padding: 30px 10%;
 }
 
+img{
+  border-radius: 1rem;
+}
+
 .logo{
   cursor: pointer;
   transition: all .5s ease-out 0s;
@@ -166,6 +170,11 @@ dialog h2{
   height: 24px;
   justify-content: center;
   align-items: center;
+  transition: all 200ms ease 0s;
+}
+
+.socials-container a svg:hover{
+  height: 32px;
 }
 
 .mediumimg{
@@ -222,6 +231,18 @@ img.displaySlide{
   left: 10px;
   bottom: 10px;
   transition: all 0.5s ease 0s;
+  animation-name: fade;
+  animation-duration: .5s;
+}
+
+#sdisplaytip{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 9px 25px;
+  border-radius: 2rem;
+  left: 90px;
+  bottom: 10px;
+  transition: all 0.5s ease 0s;
 }
 
 .prevs{
@@ -230,6 +251,44 @@ img.displaySlide{
 
 .nexts{
   right: 0;
+}
+
+.tabs_container{
+  margin-bottom: 50px;
+}
+
+.tabs{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs__label{
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.tabs__radio{
+  display: none;
+}
+
+.tabs__radio:checked+.tabs__label{
+  font-weight: bold;
+  color:rgb(32, 79, 43);
+  border-bottom: 2px solid rgb(32, 79, 43);
+  border-radius: 1rem;
+}
+
+.tabs__radio:checked+.tabs__label+.tabs__content{
+  display: initial;
+}
+
+.tabs__content{
+  order: 1;
+  width: 100%;
+  line-height: 1.5;
+  font-size: .9rem;
+  display: none;
+  margin-top: 20px;
 }
 
 @keyframes fade{

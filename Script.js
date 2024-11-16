@@ -43,17 +43,23 @@ function showSlide(idx){
 }
 
 function prevSlide(){
+  if (document.getElementById("sdisplaytip")){
+    document.getElementById("sdisplaytip").style.display = "none";
+  }
   clearInterval(intervalID);
   slideIdx--;
   showSlide(slideIdx);
 }
 
 function nextSlide(){
+  if (document.getElementById("sdisplaytip")){
+    document.getElementById("sdisplaytip").style.display = "none";
+  }
   slideIdx++;
   if(slideIdx == 3){
-    slideDisplay.textContent = "1/" + slides.length + " | Use Left and Right arrow on your keyboard or just click the buttons";
+    slideDisplay.textContent = "1/" + slides.length;
   }else{
-    slideDisplay.textContent = (slideIdx+1).toString() + "/" + slides.length + " | Use Left and Right arrow on your keyboard or just click the buttons";
+    slideDisplay.textContent = (slideIdx+1).toString() + "/" + slides.length;
   }
   showSlide(slideIdx);
 }
