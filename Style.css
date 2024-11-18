@@ -118,6 +118,37 @@ button svg{
   fill: white;
 }
 
+.articleb{
+  justify-content: center;
+  padding: 20px 0;
+  background: linear-gradient(120deg, #111, rgb(27, 34, 17), rgb(51, 35, 17));
+  border-radius: 1rem;
+  transition: all .5s ease-out 0s;
+}
+
+.articleb a{
+  margin-inline: 50px;
+}
+
+.articleb p{
+  margin-inline: 50px;
+}
+
+.articleb span{
+  background-image: radial-gradient(#9b0b0bc1, #8f3c3cc1, #b88686c1);
+  background-clip: text;
+  color: transparent;
+  transition: all .5s ease-out 0s;
+}
+
+.articleb span:hover{
+  color: #0ebd3a;
+}
+
+.articleb p svg{
+  fill: white;
+}
+
 .selected{
   font-weight: bolder;
 }
@@ -191,8 +222,8 @@ dialog h2{
 
 .slider{
   position: relative;
-  max-width: 99%;
-  width: 95vh;
+  min-width:90vh;
+  height: 52vh;
   margin: auto;
   overflow: hidden;
   border-radius: 1rem;
@@ -220,7 +251,7 @@ img.displaySlide{
 }
 
 .slider button:hover{
-  padding: 25px 15px;
+  padding: 50px 25px;
 }
 
 .slider span{

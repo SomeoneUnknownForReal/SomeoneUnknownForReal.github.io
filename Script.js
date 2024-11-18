@@ -4,6 +4,8 @@ const slides = document.querySelectorAll(".slides img");
 let slideIdx = 0;
 let intervalID = null;
 
+let nextN = 0;
+
 const slideDisplay = document.getElementById("sdisplay");
 
 initializeSlider();
@@ -52,8 +54,10 @@ function prevSlide(){
 }
 
 function nextSlide(){
-  if (document.getElementById("sdisplaytip")){
+  if (document.getElementById("sdisplaytip") && nextN == 2){
     document.getElementById("sdisplaytip").style.display = "none";
+  }else{
+    nextN++;
   }
   slideIdx++;
   if(slideIdx == 3){
