@@ -1,12 +1,12 @@
 # CHANGELOG
 
-## Version 1 commit 20:
+## Version 1 commit 21:
 - Actually updated this changelog
 
-## Version 1 commit 19:
+## Version 1 commit 20:
 - Made some things unavalible through main site.
 
-## Version 1 commit 18:
+## Version 1 commit 19:
 - Actually finished icons
 
 ## Version 0 commit 17:
