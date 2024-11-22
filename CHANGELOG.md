@@ -1,5 +1,17 @@
 # CHANGELOG
 
+## Version 1 commit 20:
+- Actually updated this changelog
+
+## Version 1 commit 19:
+- Made some things unavalible through main site.
+
+## Version 1 commit 18:
+- Actually finished icons
+
+## Version 0 commit 17:
+- Changed some text and icon on index file
+
 ## Version 0 commit 16:
 - Added this changelog file for more in depth information about the commit (probably won't be updated unless major commit)
 
