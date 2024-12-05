@@ -1,5 +1,14 @@
 # CHANGELOG
 
+## Pre Version 2 commit 22:
+- Changed the look of the site
+- Contact information is now in the navbar (as links)
+- Added a toggle auto-slide button and Up Arrow as the shortcut to toggle it.
+- Updated home page information
+- Removed most of the tos and the prices page temporarily
+- Projects are now avalible uploaded online
+- Added project tags
+
 ## Version 1 commit 21:
 - Actually updated this changelog
 

@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+  font-family: "montserrat", sans-serif;
+  text-align: center;
+  background-image: linear-gradient(120deg, #111, #282828);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+}
+
+#clbl{
+  display: block;
+  font-size: 10em;
+  transition: color .5s ease 0s;
+}
+
+.btn{
+  font-family: "montserrat", sans-serif;
+  padding: 10px 20px;
+  font-size: 1.5em;
+  background-color: #383838;
+  color: white;
+  border: none;
+  border-radius: 50rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease 0s;
+}
+
+.btn:hover{
+  background-color: #303030;
+}
+
+.btn:active{
+  background-color: #484848;
+}
+
+.blur{
+  filter: blur(5px);
+  transition: filter 0.5s ease 0s;
+}
+
+.blur:hover{
+  filter: blur();
+}
+
+#plusbtn:hover{
+  color: lightgreen;
+}
+
+#minusbtn:hover{
+  color: lightsalmon;
+}
+
+#resetbtn:hover{
+  color: lightcoral;
+}

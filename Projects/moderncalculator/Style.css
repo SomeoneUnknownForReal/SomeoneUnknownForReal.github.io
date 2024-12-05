@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+  --font: 'montserrat';
+  --operation-buttons-color: hsl(203, 100%, 60%);
+  --operation-buttons-hover-color: hsl(203, 100%, 80%);
+  --operation-buttons-clicked-color: hsl(204, 100%, 53%);
+  --button-color: hsl(0, 0%, 30%);
+  --button-hover-color: hsl(117, 100%, 70%);
+  --button-clicked-color: hsl(117, 100%, 80%);
+  --button-text-color: white;
+  --button-rounding: 50%;
+  --blur-amount: 2px;
+  --box-rounding: 15px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 85%);
+  margin: 0;
+}
+
+.tad{
+  display: block;
+  font-family: var(--font), Arial, sans-serif;
+  color: rgb(32, 32, 32);
+  padding: 5rem;
+}
+
+#calculator{
+  font-family: var(--font), Arial, sans-serif;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: var(--box-rounding);
+  max-width: 500px;
+  overflow: hidden;
+  transition: filter 0.5s ease 0s;
+  filter: blur(var(--blur-amount));
+}
+
+#calculator:hover{
+  filter: blur();
+}
+
+#display{
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  border-radius: var(--box-rounding);
+  background-color: hsl(0, 0%, 20%);
+  color: white;
+}
+
+input{
+  font-family: var(--font), Arial, sans-serif;
+  font-weight: bolder;
+}
+
+#keys{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
+}
+
+button{
+  width: 100px;
+  height: 100px;
+  border-radius: var(--button-rounding);
+  border: none;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  font-size: 3rem;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: var(--font), Arial, sans-serif;
+  transition: background-color 0.5s ease 0s;
+}
+
+button:hover{
+  background-color: var(--button-hover-color);
+  filter: blur();
+  border-radius: 48px;
+}
+
+button:active{
+  background-color: var(--button-clicked-color);
+}
+
+button img{
+  filter: invert();
+  width: 75%;
+}
+
+.operator-btn{
+  background-color: var(--operation-buttons-color);
+}
+
+.operator-btn:hover{
+  background-color: var(--operation-buttons-hover-color);
+}
+
+.operator-btn:active{
+  background-color: var(--operation-buttons-clicked-color);
+}

@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root{
+  --corner: 15%;
+}
+
+body{
+  font-family: 'montserrat',sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.clock{
+  background: linear-gradient(120deg, #111, #122);
+  border-radius: var(--corner);
+  width: 60vh;
+  height: 30vh;
+  display: grid;
+  justify-content: center;
+  transition: ease 0.5s;
+}
+
+.clock:hover{
+  -webkit-box-shadow: 8px 8px 55px -7px rgba(48, 62, 169, .5);
+  -moz-box-shadow: 8px 8px 55px -7px rgba(48, 62, 169, .5);
+  box-shadow: 8px 8px 55px -7px rgba(48, 62, 169, .5);
+}
+
+.container{
+  background-color: black;
+  border-radius: var(--corner);
+  position: relative;
+  top: 10%;
+  width: 32rem;
+  height: 15rem;
+}
+
+h3{
+  font-size: 100px;
+  position: relative;
+  bottom: 17%;
+  left: 10%;
+}
+
+h4{
+  font-size: 32px;
+  color: white;
+  position: relative;
+  bottom: 67%;
+  left: 23%;
+}

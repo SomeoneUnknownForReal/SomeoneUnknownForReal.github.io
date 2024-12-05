@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+body{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  background-image: linear-gradient(120deg, #000, #111, #121);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #bec8be;
+  font-family: 'montserrat', sans-serif;
+}
+
+button{
+  transition: background-color .5s ease 0s;
+}
+
+#stoph1{
+  font-size: 4rem;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: 30px;
+  border: 5px solid;
+  border-radius: 2rem;
+  background-color: #111;
+  box-shadow: 0px 5px 5px hsl(0, 0%, 25%);
+}
+
+#display{
+  font-size: 5rem;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: bold;
+  text-shadow: 2px 2px 5px hsl(0, 0%, 37%);
+  margin-bottom: 25px;
+}
+
+#controls button{
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px 20px;
+  margin: 5px;
+  min-width: 50px;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  color: white;
+  transition: box-shadow .3s ease 0s;
+}
+
+#controls button svg{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  fill: #555;
+}
+
+#start{
+  background-color: hsl(122, 100%, 82%);
+  box-shadow: hsl(122, 100%, 82%) 0px 5px 5px;
+}
+
+#start:hover{
+  background-color: hsl(122, 100%, 62%);
+  box-shadow: hsl(122, 100%, 62%) 0px 5px 5px;
+}
+
+#pause{
+  display: none;
+  background-color: white;
+  box-shadow: gray 0px 5px 5px;
+}
+
+#pause:hover{
+  background-color: #eee;
+  box-shadow: rgb(120,120,120) 0px 5px 5px;
+}
+
+#reset{
+  display: none;
+  background-color: hsl(0, 100%, 82%);
+  box-shadow: hsl(0, 100%, 82%) 0px 5px 5px;
+}
+
+#reset:hover{
+  background-color: hsl(0, 100%, 62%);
+  box-shadow: hsl(0, 100%, 62%) 0px 5px 5px;
+}
