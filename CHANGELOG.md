@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## Version 2 commit 23:
+- Changed the previous commit description a bit
+- Added a new point in the terms of use
+- Removed file names from url
+- Changed the index.html file names to be lowercase letters
+
 ## Pre Version 2 commit 22:
 - Changed the look of the site
 - Contact information is now in the navbar (as links)
@@ -8,6 +14,7 @@
 - Removed most of the tos and the prices page temporarily
 - Projects are now avalible uploaded online
 - Added project tags
+- Moved the rest of the tos to the projects tab for now
 
 ## Version 1 commit 21:
 - Actually updated this changelog
